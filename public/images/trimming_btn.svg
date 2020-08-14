@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="357" height="112" viewBox="0 0 357 112">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.532" y1="1.073" x2="0.532" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#5c27fe"/>
+      <stop offset="0" stop-color="#652dfc"/>
+      <stop offset="1" stop-color="#c165dd"/>
+    </linearGradient>
+    <filter id="Rectangle_711" x="0" y="0" width="357" height="112" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feFlood flood-color="#5c27fe" flood-opacity="0.502"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_1839" data-name="Group 1839" transform="translate(-602 -111)">
+    <g transform="matrix(1, 0, 0, 1, 602, 111)" filter="url(#Rectangle_711)">
+      <rect id="Rectangle_711-2" data-name="Rectangle 711" width="320.999" height="76" rx="8" transform="translate(18 16)" fill="url(#linear-gradient)"/>
+    </g>
+    <text id="AI_Trimming" data-name="AI Trimming" transform="translate(687 152)" fill="#fff" font-size="20" font-family="Roboto-Medium, Roboto" font-weight="500"><tspan x="0" y="19">AI Trimming</tspan></text>
+    <g id="Group_1670" data-name="Group 1670" transform="translate(641.646 147.563)">
+      <g id="Group_298" data-name="Group 298" transform="translate(11.435)">
+        <ellipse id="Ellipse_16" data-name="Ellipse 16" cx="3.53" cy="3.53" rx="3.53" ry="3.53" transform="translate(5.909 24.951)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+        <line id="Line_226" data-name="Line 226" x2="7.753" y2="25.459" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+      </g>
+      <g id="Group_299" data-name="Group 299" transform="translate(0 13.661)">
+        <ellipse id="Ellipse_17" data-name="Ellipse 17" cx="3.53" cy="3.53" rx="3.53" ry="3.53" transform="translate(24.951 1.844)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+        <line id="Line_227" data-name="Line 227" x2="23.574" y2="4.686" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+      </g>
+    </g>
+  </g>
+</svg>
