@@ -1,1 +1,546 @@
-const _0x556d=['video-length-field','anyBoxOpen3:\x20','click','.disloag','remove','icon-close','style','color','recreate-toggle','link','idPath-input-message','audio-transition-title','.video-container','track-link','handleTransition','checked','show','change','options','time-format-option','audio-transition-option','output','.error-message-box','time-toggle','loading-number','getElementsByClassName','no-btn','id-path','recreate-option','lock','subject','output-slider','Url\x20or\x20ID\x20should\x20be\x20longer\x20than\x2011\x20characters.','.removeRight','endcard-input-message','user-control-widget','run','transitions-box','message-box','accordion','charAt','library-btn','header','zIndex','endcard-btn','add','#end-card-length-field','video-input-message','log','audio-transition','audio-','value','id-focus','leading-riser-sound-effect','track-lock','span','anyBoxOpen2:\x20','#FCE8E6','select','public','border','setting-close-icon','Url\x20or\x20ID\x20should\x20be\x20longer\x20than\x2011\x20characters.\x20<br/>\x20Video\x20output\x20length\x20should\x20be\x20an\x20integer\x20&\x20between\x20\x207\x20-\x2030\x20sec.\x20<br/>\x20End\x20Card\x20length\x20should\x20be\x20an\x20integer\x20&\x20between\x20\x200\x20-\x2013\x20sec.','hide','.removeTop','ligh-whoosh-sound-effect','background','play','end-card-slider','selected','.removeBottom','addClass','un-link','focus','length','classList','target','toLowerCase','endcard-slider-value','time-format-title','library-box','sec-format','ldark-thud-sound-effect','#video-length-field','getElementsByTagName','The\x20length\x20should\x20be\x20an\x20integer\x20&\x20between\x20\x207\x20-\x2030\x20sec.','loading-text','nextElementSibling','removeClass','video-process-bar','recreate-video-title','active','status-option-box','display','sounds/Rake_Swing_Whoosh_Close.mp3','video-player-widget','.pass-code','none','slice','The\x20length\x20should\x20be\x20n\x20integer\x20&\x20between\x20\x200\x20-\x2013\x20sec.','#E7EDF3','UX2020','contains','getElementById','message-title','private','change\x20keyup\x20keypress\x20paste\x20click','handleOptionSelect','icon-public','sounds/222517__qubodup__dramatic-hit.flac','un-lock','toggle','video-','end-card-length-field','message-detail','1px\x20solid\x20#EA4335','addEventListener','setting-btn','9999','icon-private','mouseover','video-transition','video-meg-box','block','video-transition-option','hi-video','header-container','replace','which','selectedIndex','innerHTML','css','video-btn','setting-panel','control-panel-container','includes','yes-btn','preventDefault','idPath-meg-box','toUpperCase','sounds/464250__suburbanwizard__echo-chromatic-riser.wav','.removeLeft','message-container','track-locker','.header'];(function(_0x587503,_0x556d67){const _0x52d80a=function(_0x775e65){while(--_0x775e65){_0x587503['push'](_0x587503['shift']());}};_0x52d80a(++_0x556d67);}(_0x556d,0x1d7));const _0x52d8=function(_0x587503,_0x556d67){_0x587503=_0x587503-0x0;let _0x52d80a=_0x556d[_0x587503];return _0x52d80a;};const videoSlide=document[_0x52d8('0x43')](_0x52d8('0x8c')),videoOutput=document[_0x52d8('0x30')](_0x52d8('0x82'))[0x0],videoProcessBar=document[_0x52d8('0x43')](_0x52d8('0x35'));let videoSlideDefaultValue=0x7,videoSlideGap=0x0,videoDefaultMin=0x7,videoDefaultMax=0x14,videoCurrentlyValue=0x0,videoNewValue=0x0;const endCardSlide=document['getElementById'](_0x52d8('0x20')),endCardOutput=document[_0x52d8('0x43')](_0x52d8('0x2a')),endCardProcessBar=document[_0x52d8('0x43')]('endcard-process-bar');let endCardNewValue=0x0,endCardSlideGap=0x0,endCardDefaultMin=0x0,endCardDefaultMax=0xd,endcardDefaultValue=0x3,availableRang=0x0;const messageContainer=document[_0x52d8('0x43')](_0x52d8('0x6a')),messageBox=document[_0x52d8('0x43')](_0x52d8('0x2')),banner=document[_0x52d8('0x43')]('banner'),messageType=document['getElementById'](_0x52d8('0x44')),iconType=document[_0x52d8('0x43')]('icon-type'),messageSubject=document[_0x52d8('0x43')](_0x52d8('0x8b')),messageDetail=document[_0x52d8('0x43')](_0x52d8('0x4e')),closeBtn=document[_0x52d8('0x43')]('close'),idPath=document[_0x52d8('0x43')](_0x52d8('0x88')),runBtn=document['getElementById'](_0x52d8('0x0')),videoMarginLeft=[0x1,0x17,0x2e,0x44,0x5b,0x71,0x87,0x9e,0xb4,0xca,0xe1,0xf7,0x11a,0x135],videoBarWidth=[0x0,0x1a,0x31,0x48,0x61,0x79,0x90,0xa6,0xbd,0xd4,0xec,0x102,0x119,0x131],endcardMarginLeft=[0x12e,0x118,0x101,0xeb,0xd4,0xbe,0xa9,0x91,0x7b,0x65,0x4a,0x34,0x1d,0x7],endcardWidth=[0x2,0x18,0x2f,0x45,0x5e,0x74,0x8b,0xa2,0xb9,0xd0,0xe8,0xff,0x116,0x12d],loaderContainer=document[_0x52d8('0x43')]('loader-container'),loaderWarp=document[_0x52d8('0x43')]('loader-warp');let loadingSubject=document[_0x52d8('0x43')](_0x52d8('0x32')),loadingPercentage=document[_0x52d8('0x43')](_0x52d8('0x85'));const accordion=document[_0x52d8('0x86')](_0x52d8('0x3')),videoTransition=document[_0x52d8('0x43')](_0x52d8('0x55')),videoTransitionOption=videoTransition[_0x52d8('0x30')]('li'),audioTransition=document['getElementById'](_0x52d8('0xd')),audioTransitionOption=audioTransition[_0x52d8('0x30')]('li');let videoCurrentOption,videoCurrentOptionText,audioCurrentOption,audioCurrentOptionText,accordionContainer,panel,targetOutputLength=document[_0x52d8('0x86')](_0x52d8('0x60')),targetendcardLength=document[_0x52d8('0x86')](_0x52d8('0x8'));const timeToggle=document['getElementById'](_0x52d8('0x84')),secFormat=document[_0x52d8('0x43')](_0x52d8('0x2d')),frameFormat=document[_0x52d8('0x43')]('frame-format'),recreateToggle=document[_0x52d8('0x43')](_0x52d8('0x75')),hiVideo=document['getElementById'](_0x52d8('0x59')),lowVideo=document[_0x52d8('0x43')]('low-video'),trackLock=document['getElementById'](_0x52d8('0x6b')),link=document[_0x52d8('0x43')](_0x52d8('0x7a')),lock=document[_0x52d8('0x43')](_0x52d8('0x12')),transitionsBox=document[_0x52d8('0x43')](_0x52d8('0x1'));let videoTransitionTitle=document[_0x52d8('0x43')]('video-transition-title'),audioTransitionTitle=document['getElementById'](_0x52d8('0x78'));const videoLengthField=document[_0x52d8('0x43')](_0x52d8('0x6d')),endcardLengthField=document[_0x52d8('0x43')](_0x52d8('0x4d')),videoMegBox=document[_0x52d8('0x43')](_0x52d8('0x56')),endcardMegBox=document[_0x52d8('0x43')]('endcard-meg-box'),videoInputMessage=document[_0x52d8('0x43')](_0x52d8('0xb')),endcardInputMessage=document[_0x52d8('0x43')](_0x52d8('0x8f')),noBtn=document[_0x52d8('0x43')](_0x52d8('0x87')),yesBtn=document[_0x52d8('0x43')](_0x52d8('0x64')),idPathInputMessage=document[_0x52d8('0x43')](_0x52d8('0x77')),idPathMegBox=document[_0x52d8('0x43')](_0x52d8('0x66'));let idPathPassInputCheck=![],videoInputPassCheck=!![],endcardInputCheck=!![];const libraryBtn=document['getElementById'](_0x52d8('0x5')),libraryBox=document[_0x52d8('0x43')](_0x52d8('0x2c')),header=document[_0x52d8('0x43')](_0x52d8('0x6')),iconClose=document[_0x52d8('0x43')](_0x52d8('0x72')),settingBtn=document[_0x52d8('0x43')](_0x52d8('0x51')),settingPanel=document['getElementById'](_0x52d8('0x61')),settingCloseIcon=document[_0x52d8('0x43')](_0x52d8('0x19'));window['onload']=function(){jQuery(_0x52d8('0x6c'))[_0x52d8('0x1b')](),jQuery(_0x52d8('0x79'))[_0x52d8('0x1b')](),jQuery(_0x52d8('0x69'))[_0x52d8('0x34')](_0x52d8('0x62')),jQuery(_0x52d8('0x1c'))[_0x52d8('0x34')](_0x52d8('0x5a')),jQuery(_0x52d8('0x8e'))[_0x52d8('0x34')](_0x52d8('0x3b')),jQuery(_0x52d8('0x22'))['removeClass'](_0x52d8('0x90')),jQuery('#submit')['on'](_0x52d8('0x6f'),function(_0x1417f9){_0x1417f9[_0x52d8('0x65')]();let _0x2f80f8=jQuery(_0x52d8('0x3c'))[0x0][_0x52d8('0xf')];_0x2f80f8&&(_0x2f80f8==_0x52d8('0x41')?(jQuery(_0x52d8('0x6c'))[_0x52d8('0x7d')](),jQuery(_0x52d8('0x79'))[_0x52d8('0x7d')](),jQuery(_0x52d8('0x69'))[_0x52d8('0x23')](_0x52d8('0x62')),jQuery(_0x52d8('0x1c'))[_0x52d8('0x23')](_0x52d8('0x5a')),jQuery(_0x52d8('0x8e'))[_0x52d8('0x23')]('video-player-widget'),jQuery(_0x52d8('0x22'))[_0x52d8('0x23')](_0x52d8('0x90')),jQuery('.disloagBg')[_0x52d8('0x1b')](),jQuery(_0x52d8('0x70'))[_0x52d8('0x1b')]()):(jQuery(_0x52d8('0x83'))[_0x52d8('0x5f')](_0x52d8('0x39'),_0x52d8('0x57')),setInterval(function(){jQuery('.error-message-box')[_0x52d8('0x5f')](_0x52d8('0x39'),_0x52d8('0x3d'));},0xdac)));});};function showLoading(_0x312a0f){}function removeLoading(){}jQuery(idPath)['on'](_0x52d8('0x46'),function(_0x146083){idPath[_0x52d8('0xf')][_0x52d8('0x26')]<0xb?(idPathMegBox[_0x52d8('0x73')][_0x52d8('0x39')]=_0x52d8('0x57'),idPath[_0x52d8('0x27')][_0x52d8('0x9')](_0x52d8('0x10')),idPathInputMessage['innerHTML']=_0x52d8('0x8d'),idPathPassInputCheck=![]):(idPathMegBox[_0x52d8('0x73')][_0x52d8('0x39')]=_0x52d8('0x3d'),idPath['classList'][_0x52d8('0x71')]('id-focus'),idPathPassInputCheck=!![]);}),jQuery(_0x52d8('0x2f'))['on']('change\x20keyup\x20keypress\x20paste\x20click',function(_0x28e134){let _0x39f1be=this[_0x52d8('0xf')];_0x39f1be<0x7||_0x39f1be>0x1e||_0x28e134[_0x52d8('0x5c')]===0xbe||_0x39f1be[_0x52d8('0x63')]('.')?(videoLengthField[_0x52d8('0x73')][_0x52d8('0x18')]=_0x52d8('0x4f'),videoLengthField[_0x52d8('0x73')][_0x52d8('0x1e')]=_0x52d8('0x15'),videoMegBox['style']['display']=_0x52d8('0x57'),videoInputMessage[_0x52d8('0x5e')]=_0x52d8('0x31'),videoInputPassCheck=![]):(videoMegBox[_0x52d8('0x73')][_0x52d8('0x39')]=_0x52d8('0x3d'),videoLengthField[_0x52d8('0x73')][_0x52d8('0x1e')]='#E7EDF3',videoLengthField[_0x52d8('0x73')][_0x52d8('0x18')]=_0x52d8('0x3d'),videoInputPassCheck=!![]);}),jQuery(_0x52d8('0xa'))['on']('change\x20keyup\x20keypress\x20paste\x20click',function(_0x3403c6){let _0x4dce5c=this[_0x52d8('0xf')];_0x4dce5c==''||_0x4dce5c>0xd||_0x4dce5c<0x0||_0x3403c6[_0x52d8('0x5c')]===0xbe||_0x4dce5c[_0x52d8('0x63')]('.')?(endcardLengthField[_0x52d8('0x73')][_0x52d8('0x18')]=_0x52d8('0x4f'),endcardLengthField[_0x52d8('0x73')][_0x52d8('0x1e')]=_0x52d8('0x15'),endcardMegBox[_0x52d8('0x73')][_0x52d8('0x39')]=_0x52d8('0x57'),endcardInputMessage[_0x52d8('0x5e')]=_0x52d8('0x3f'),endcardInputCheck=![]):(endcardMegBox[_0x52d8('0x73')][_0x52d8('0x39')]='none',endcardLengthField['style'][_0x52d8('0x1e')]=_0x52d8('0x40'),endcardLengthField[_0x52d8('0x73')][_0x52d8('0x18')]='none',endcardInputCheck=!![]);});for(let q=0x0;q<accordion[_0x52d8('0x26')];q++){accordion[q][_0x52d8('0x50')](_0x52d8('0x6f'),function(_0xf2c596){for(let _0x1c33c7=0x0;_0x1c33c7<accordion[_0x52d8('0x26')];_0x1c33c7++){_0x1c33c7==q?(panel=this[_0x52d8('0x33')],this['classList'][_0x52d8('0x4b')](_0x52d8('0x21')),panel[_0x52d8('0x27')][_0x52d8('0x4b')]('close')):(accordion[_0x1c33c7][_0x52d8('0x27')][_0x52d8('0x71')](_0x52d8('0x21')),accordion[_0x1c33c7][_0x52d8('0x33')]['classList'][_0x52d8('0x9')]('close'));}});}let publicStatus=![],currentOpenMenu=null,anyBoxOpen=![],statusSwitchs=document[_0x52d8('0x86')]('status-switch');for(let statusSwitch of statusSwitchs){statusSwitch[_0x52d8('0x50')](_0x52d8('0x6f'),_0x5acba7=>{_0x5acba7[_0x52d8('0x65')]();let _0x4dae61=statusSwitch['previousElementSibling'],_0x434e8d=_0x4dae61[_0x52d8('0x30')](_0x52d8('0x13')),_0x3b160d=statusSwitch[_0x52d8('0x86')](_0x52d8('0x38')),_0x5109c6=statusSwitch[_0x52d8('0x86')](_0x52d8('0x17')),_0x32ec10=statusSwitch[_0x52d8('0x86')](_0x52d8('0x45'));currentOpenMenu=_0x5acba7['target'],console[_0x52d8('0xc')]('currentOpenMenu',currentOpenMenu),publicStatus==![]&&anyBoxOpen!==!![]?(_0x3b160d[0x0][_0x52d8('0x73')]['display']=_0x52d8('0x57'),publicStatus=!![],anyBoxOpen=!![],console['log'](_0x52d8('0x14'),anyBoxOpen),jQuery(_0x5109c6)['on'](_0x52d8('0x6f'),function(){_0x434e8d[0x0][_0x52d8('0x27')]['add'](_0x52d8('0x48')),_0x434e8d[0x0][_0x52d8('0x27')][_0x52d8('0x71')](_0x52d8('0x53'));}),jQuery(_0x32ec10)['on'](_0x52d8('0x6f'),function(){_0x434e8d[0x0]['classList'][_0x52d8('0x71')](_0x52d8('0x48')),_0x434e8d[0x0][_0x52d8('0x27')][_0x52d8('0x9')](_0x52d8('0x53'));})):(_0x3b160d[0x0][_0x52d8('0x73')][_0x52d8('0x39')]=_0x52d8('0x3d'),publicStatus=![],anyBoxOpen=![],console[_0x52d8('0xc')](_0x52d8('0x6e'),anyBoxOpen));});}let videoTransitions=document['getElementsByClassName'](_0x52d8('0x58'));for(let videoTransition of videoTransitions){videoTransition[_0x52d8('0x50')](_0x52d8('0x6f'),_0x10959d=>{_0x10959d[_0x52d8('0x65')]();let _0x30fd63=videoTransition['getElementsByTagName']('h3'),_0x47e881=$(_0x30fd63)[_0x52d8('0x5f')](_0x52d8('0x74'));videoTransitionTitle[_0x52d8('0x5e')]=_0x30fd63[0x0][_0x52d8('0x5e')],videoTransitionTitle[_0x52d8('0x73')][_0x52d8('0x74')]=_0x47e881,this['handleTransition'](videoTransition,videoTransitions,_0x52d8('0x4c'),'textbox-0');});}let audioTransitions=document[_0x52d8('0x86')](_0x52d8('0x81'));for(let audioTransition of audioTransitions){audioTransition[_0x52d8('0x50')](_0x52d8('0x6f'),_0x322993=>{_0x322993[_0x52d8('0x65')]();let _0x28366a=audioTransition[_0x52d8('0x30')]('h3'),_0x18e60d=$(_0x28366a)[_0x52d8('0x5f')](_0x52d8('0x74'));audioTransitionTitle[_0x52d8('0x5e')]=_0x28366a[0x0]['innerHTML'],audioTransitionTitle[_0x52d8('0x73')]['color']=_0x18e60d,this[_0x52d8('0x7b')](audioTransition,audioTransitions,_0x52d8('0xe'),'textbox-1');});}function handleTransition(_0x12f027,_0x561388,_0x4f58ae,_0x21301f){for(let _0x531f0f of _0x561388){_0x531f0f[_0x52d8('0x27')][_0x52d8('0x71')](_0x52d8('0x37'));}_0x12f027[_0x52d8('0x27')][_0x52d8('0x9')](_0x52d8('0x37'));let _0x33de06=document['getElementsByTagName'](_0x52d8('0x16')),_0x5c68eb=_0x12f027['id'][_0x52d8('0x5b')](_0x4f58ae,'')[_0x52d8('0x5b')](/-/g,'');for(let _0xd37db1 of _0x33de06){if(_0xd37db1['id']==_0x21301f){for(let _0x285bb3=0x0;_0x285bb3<_0xd37db1[_0x52d8('0x7f')]['length'];_0x285bb3++){let _0x530737=_0xd37db1[_0x52d8('0x7f')][_0x285bb3]['value'][_0x52d8('0x29')]()[_0x52d8('0x5b')](/ /g,'');if(_0x530737==_0x5c68eb){_0xd37db1[_0x52d8('0x5d')]=_0x285bb3;break;}}break;}}}function openMessageBox(){messageContainer[_0x52d8('0x73')][_0x52d8('0x39')]=_0x52d8('0x57'),messageBox['style'][_0x52d8('0x39')]=_0x52d8('0x57');}function closeMessageBox(){messageContainer['style'][_0x52d8('0x39')]=_0x52d8('0x3d'),messageBox[_0x52d8('0x73')][_0x52d8('0x39')]='none';}function showMessage(_0x479f49,_0x1690c1,_0xa0b1cf,_0x293fd4,_0x5aabf9,_0x5e7c58){_0x479f49=_0x479f49[_0x52d8('0x4')](0x0)[_0x52d8('0x67')]()+_0x479f49[_0x52d8('0x3e')](0x1),messageType['innerHTML']=_0x479f49,banner[_0x52d8('0x27')][_0x52d8('0x9')](_0x479f49),iconType[_0x52d8('0x27')][_0x52d8('0x9')](_0x479f49),messageSubject['innerHTML']=_0x1690c1,messageDetail[_0x52d8('0x5e')]=_0xa0b1cf,_0x293fd4?(closeBtn[_0x52d8('0x73')][_0x52d8('0x39')]=_0x52d8('0x3d'),noBtn[_0x52d8('0x73')][_0x52d8('0x39')]=_0x52d8('0x57'),yesBtn[_0x52d8('0x73')]['display']=_0x52d8('0x57')):(closeBtn[_0x52d8('0x73')][_0x52d8('0x39')]='block',noBtn[_0x52d8('0x73')][_0x52d8('0x39')]=_0x52d8('0x3d'),yesBtn[_0x52d8('0x73')][_0x52d8('0x39')]='none'),_0x5aabf9&&yesBtn['addEventListener'](_0x52d8('0x6f'),function(_0x1c7328){_0x1c7328['preventDefault'](),window[_0x5aabf9](),closeMessageBox();}),_0x5e7c58&&noBtn[_0x52d8('0x50')]('click',function(_0x43b67c){_0x43b67c[_0x52d8('0x65')](),window[_0x5e7c58](),closeMessageBox();});}function yesFunctionName(){}function noFunctionName(){}closeBtn[_0x52d8('0x50')]('click',function(_0x47d60c){_0x47d60c[_0x52d8('0x65')](),messageSubject[_0x52d8('0x5e')]='',messageDetail[_0x52d8('0x5e')]='',closeMessageBox();}),runBtn['addEventListener'](_0x52d8('0x6f'),function(_0x33f58e){_0x33f58e[_0x52d8('0x65')](),(idPathPassInputCheck==![]||videoInputPassCheck==![]||endcardInputCheck==![])&&(showMessage('Error','Here\x20is\x20an\x20error\x20message.',_0x52d8('0x1a')),openMessageBox());}),idPath[_0x52d8('0x50')](_0x52d8('0x25'),function(){this[_0x52d8('0x27')][_0x52d8('0x71')]('id-focus');});const timeFormatTitle=document['getElementById'](_0x52d8('0x2b')),recreateVideoTitle=document[_0x52d8('0x43')](_0x52d8('0x36'));let timeFormats=document[_0x52d8('0x86')](_0x52d8('0x80'));for(let timeFormat of timeFormats){timeFormat[_0x52d8('0x50')]('click',_0x46d9d8=>{_0x46d9d8[_0x52d8('0x65')](),timeFormatTitle[_0x52d8('0x5e')]=timeFormat[_0x52d8('0x5e')],this[_0x52d8('0x47')](timeFormat,timeFormats);});}let recreateVideos=document[_0x52d8('0x86')](_0x52d8('0x89'));for(let recreateVideo of recreateVideos){recreateVideo['addEventListener'](_0x52d8('0x6f'),_0x2de5db=>{_0x2de5db['preventDefault'](),recreateVideoTitle[_0x52d8('0x5e')]=recreateVideo[_0x52d8('0x5e')],this[_0x52d8('0x47')](recreateVideo,recreateVideos);});}function handleOptionSelect(_0x191dea,_0x25ffc2){for(let _0x2f4c16 of _0x25ffc2){_0x2f4c16['classList'][_0x52d8('0x71')](_0x52d8('0x37'));}_0x191dea[_0x52d8('0x27')][_0x52d8('0x9')](_0x52d8('0x37'));}trackLock[_0x52d8('0x50')](_0x52d8('0x6f'),function(_0x444363){link[_0x52d8('0x27')][_0x52d8('0x42')](_0x52d8('0x24'))||lock[_0x52d8('0x27')][_0x52d8('0x42')](_0x52d8('0x4a'))?(link[_0x52d8('0x27')][_0x52d8('0x9')]('link'),link[_0x52d8('0x27')][_0x52d8('0x71')](_0x52d8('0x24')),lock[_0x52d8('0x27')][_0x52d8('0x71')](_0x52d8('0x4a')),lock[_0x52d8('0x27')]['add'](_0x52d8('0x8a'))):(link[_0x52d8('0x27')][_0x52d8('0x9')](_0x52d8('0x24')),link[_0x52d8('0x27')]['remove'](_0x52d8('0x76')),lock[_0x52d8('0x27')][_0x52d8('0x71')](_0x52d8('0x8a')),lock[_0x52d8('0x27')][_0x52d8('0x9')](_0x52d8('0x4a')));}),transitionsBox[_0x52d8('0x50')](_0x52d8('0x7e'),function(_0x2ffb19){_0x2ffb19[_0x52d8('0x28')][_0x52d8('0x7c')]==!![]?console['log']('on'):console[_0x52d8('0xc')]('off');}),libraryBtn[_0x52d8('0x50')](_0x52d8('0x6f'),function(_0x5df864){_0x5df864[_0x52d8('0x65')](),libraryBox['style'][_0x52d8('0x39')]='block',messageContainer[_0x52d8('0x73')][_0x52d8('0x39')]=_0x52d8('0x57'),header['style'][_0x52d8('0x7')]='0';}),iconClose['addEventListener'](_0x52d8('0x6f'),function(_0x44d284){_0x44d284[_0x52d8('0x65')](),libraryBox[_0x52d8('0x73')][_0x52d8('0x39')]=_0x52d8('0x3d'),messageContainer[_0x52d8('0x73')][_0x52d8('0x39')]='none',header[_0x52d8('0x73')][_0x52d8('0x7')]=_0x52d8('0x52'),currentOpenMenu!=null&&(console[_0x52d8('0xc')]('2',currentOpenMenu),currentOpenMenu[_0x52d8('0x6f')]());}),messageContainer[_0x52d8('0x50')]('click',function(_0x39c3b5){_0x39c3b5[_0x52d8('0x65')](),iconClose[_0x52d8('0x6f')](),settingCloseIcon[_0x52d8('0x6f')]();}),settingBtn[_0x52d8('0x50')](_0x52d8('0x6f'),function(_0x4d25d0){_0x4d25d0[_0x52d8('0x65')](),settingPanel[_0x52d8('0x73')][_0x52d8('0x39')]=_0x52d8('0x57'),messageContainer[_0x52d8('0x73')][_0x52d8('0x39')]=_0x52d8('0x57'),header[_0x52d8('0x73')][_0x52d8('0x7')]='0';}),settingCloseIcon[_0x52d8('0x50')](_0x52d8('0x6f'),function(_0x222510){_0x222510[_0x52d8('0x65')](),settingPanel['style']['display']='none',messageContainer['style'][_0x52d8('0x39')]=_0x52d8('0x3d'),header[_0x52d8('0x73')][_0x52d8('0x7')]=_0x52d8('0x52');});const lighWhooshSoundEffect=document[_0x52d8('0x43')](_0x52d8('0x1d')),darkThudSoundEffect=document[_0x52d8('0x43')](_0x52d8('0x2e')),leadingRiserSoundEffect=document[_0x52d8('0x43')](_0x52d8('0x11'));lighWhooshSoundEffect[_0x52d8('0x50')](_0x52d8('0x54'),function(_0x52e0a1){const _0x3352bf=new Audio(_0x52d8('0x3a'));_0x3352bf[_0x52d8('0x1f')]();}),darkThudSoundEffect[_0x52d8('0x50')](_0x52d8('0x54'),function(_0x2b8937){const _0x4e5c29=new Audio(_0x52d8('0x49'));_0x4e5c29['play']();}),leadingRiserSoundEffect[_0x52d8('0x50')](_0x52d8('0x54'),function(_0x1f38b3){const _0x455db0=new Audio(_0x52d8('0x68'));_0x455db0['play']();});
+// Output Video Length & Output End Card Length Value
+const videoSlide            = document.getElementById('output-slider');
+const videoOutput           = document.getElementsByTagName('output')[0];
+const videoProcessBar       = document.getElementById('video-process-bar');
+let videoSlideDefaultValue  = 7;
+let videoSlideGap           = 0;
+let videoDefaultMin         = 7;
+let videoDefaultMax         = 20;
+let videoCurrentlyValue     = 0;
+let videoNewValue           = 0;
+
+const endCardSlide          = document.getElementById('end-card-slider');
+const endCardOutput         = document.getElementById('endcard-slider-value');
+const endCardProcessBar     = document.getElementById('endcard-process-bar');
+let endCardNewValue         = 0;
+let endCardSlideGap         = 0;
+let endCardDefaultMin       = 0;
+let endCardDefaultMax       = 13;
+let endcardDefaultValue     = 3;
+let availableRang           = 0;
+
+const messageContainer      = document.getElementById('message-container');
+const messageBox            = document.getElementById('message-box');
+const banner                = document.getElementById('banner');
+const messageType           = document.getElementById('message-title');
+const iconType              = document.getElementById('icon-type');
+const messageSubject        = document.getElementById('subject');
+const messageDetail         = document.getElementById('message-detail');
+const closeBtn              = document.getElementById('close');
+const idPath                = document.getElementById('id-path');
+const runBtn                = document.getElementById('run');
+
+const videoMarginLeft       = [1, 23, 46, 68, 91, 113, 135, 158, 180, 202, 225, 247, 282, 309];
+const videoBarWidth         = [0, 26, 49, 72, 97, 121, 144, 166, 189, 212, 236, 258, 281, 305];
+const endcardMarginLeft     = [302, 280, 257, 235, 212, 190, 169, 145, 123, 101, 74, 52, 29, 7];
+const endcardWidth          = [2, 24, 47, 69, 94, 116, 139, 162, 185, 208, 232, 255, 278, 301];
+
+const loaderContainer       = document.getElementById('loader-container');
+const loaderWarp            = document.getElementById('loader-warp');
+let loadingSubject          = document.getElementById('loading-text');
+let loadingPercentage       = document.getElementById('loading-number');
+
+const accordion             = document.getElementsByClassName("accordion");
+const videoTransition       = document.getElementById('video-transition');
+const videoTransitionOption = videoTransition.getElementsByTagName('li');
+const audioTransition       = document.getElementById('audio-transition');
+const audioTransitionOption = audioTransition.getElementsByTagName('li');
+let videoCurrentOption;
+let videoCurrentOptionText;
+let audioCurrentOption;
+let audioCurrentOptionText;
+let accordionContainer;
+let panel;
+
+let targetOutputLength      = document.getElementsByClassName('video-btn');
+let targetendcardLength     = document.getElementsByClassName('endcard-btn');
+
+const timeToggle            = document.getElementById('time-toggle');
+const secFormat             = document.getElementById('sec-format');
+const frameFormat           = document.getElementById('frame-format');
+const recreateToggle        = document.getElementById('recreate-toggle');
+const hiVideo               = document.getElementById('hi-video');
+const lowVideo              = document.getElementById('low-video');
+const trackLock             = document.getElementById('track-locker');
+const link                  = document.getElementById('track-link');
+const lock                  = document.getElementById('track-lock');
+const transitionsBox        = document.getElementById('transitions-box');
+
+let videoTransitionTitle    = document.getElementById('video-transition-title');
+let audioTransitionTitle    = document.getElementById('audio-transition-title');
+const videoLengthField      = document.getElementById('video-length-field');
+const endcardLengthField    = document.getElementById('end-card-length-field');
+const videoMegBox           = document.getElementById('video-meg-box');
+const endcardMegBox         = document.getElementById('endcard-meg-box');
+const videoInputMessage     = document.getElementById('video-input-message');
+const endcardInputMessage   = document.getElementById('endcard-input-message');
+
+const noBtn                 = document.getElementById('no-btn');
+const yesBtn                = document.getElementById('yes-btn');
+
+const idPathInputMessage    = document.getElementById('idPath-input-message');
+const idPathMegBox          = document.getElementById('idPath-meg-box');
+
+let idPathPassInputCheck    = false;
+let videoInputPassCheck     = true;
+let endcardInputCheck       = true;
+
+const libraryBtn            = document.getElementById('library-btn');
+const libraryBox            = document.getElementById('library-box');
+const header                = document.getElementById('header');
+const iconClose             = document.getElementById('icon-close');
+
+const settingBtn = document.getElementById('setting-btn');
+const settingPanel = document.getElementById('setting-panel');
+const settingCloseIcon = document.getElementById('setting-close-icon');
+
+// window on load
+window.onload = function(){
+    //remove the check passcode process start from here
+    //removeLoading();
+    // jQuery('.header').hide();
+    // jQuery('.video-container').hide();
+    // jQuery('.removeLeft').removeClass('control-panel-container');
+    // jQuery('.removeTop').removeClass('header-container');
+    // jQuery('.removeRight').removeClass('video-player-widget');
+    // jQuery('.removeBottom').removeClass('user-control-widget');
+    //
+    // jQuery('#submit').on('click', function(e) {
+    //     e.preventDefault();
+    //     let passCodeValue = jQuery('.pass-code')[0].value;
+    //     if(passCodeValue) {
+    //         if(passCodeValue == 'UX2020') {
+    //             jQuery('.header').show();
+    //             jQuery('.video-container').show();
+    //             jQuery('.removeLeft').addClass('control-panel-container');
+    //             jQuery('.removeTop').addClass('header-container');
+    //             jQuery('.removeRight').addClass('video-player-widget');
+    //             jQuery('.removeBottom').addClass('user-control-widget');
+    //
+    //             jQuery('.disloagBg').hide();
+    //             jQuery('.disloag').hide();
+    //         } else {
+    //             jQuery('.error-message-box').css("display", "block");
+    //             setInterval( function () {
+    //                 jQuery('.error-message-box').css("display", "none");
+    //             }, 3500);
+    //         }
+    //     }
+    // });
+}
+
+// global function to show the loading process
+function showLoading(subject) {
+    // loaderContainer.style.display = "inline-block";
+    // loaderWarp.style.display = "block";
+}
+
+function removeLoading() {
+    // loaderContainer.style.display = "none";
+    // loaderWarp.style.display = "none";
+}
+
+jQuery(idPath).on("change keyup keypress paste click", function(e){
+    if (idPath.value.length < 11) {
+        idPathMegBox.style.display = "block";
+        idPath.classList.add('id-focus');
+        idPathInputMessage.innerHTML = 'Url or ID should be longer than 11 characters.';
+        idPathPassInputCheck = false;
+    } else {
+        idPathMegBox.style.display = "none";
+        idPath.classList.remove('id-focus');
+        idPathPassInputCheck = true;
+    }
+})
+// Input field validation
+jQuery("#video-length-field").on("change keyup keypress paste click", function(e){
+    let videoValue = this.value;
+    if ( videoValue < 7 || videoValue > 30 || e.which === 190 || videoValue.includes('.')) {
+        videoLengthField.style.border = "1px solid #EA4335";
+        videoLengthField.style.background= '#FCE8E6';
+        videoMegBox.style.display = "block";
+        videoInputMessage.innerHTML = 'The length should be an integer & between  7 - 30 sec.';
+        videoInputPassCheck = false;
+    } else {
+        videoMegBox.style.display = "none";
+        videoLengthField.style.background= '#E7EDF3';
+        videoLengthField.style.border = "none";
+        videoInputPassCheck = true;
+    }
+})
+
+jQuery("#end-card-length-field").on("change keyup keypress paste click", function(e){
+    let endcardValue = this.value;
+    if ( endcardValue == '' || endcardValue > 13 || endcardValue < 0 || e.which === 190 || endcardValue.includes('.')) {
+        endcardLengthField.style.border = "1px solid #EA4335";
+        endcardLengthField.style.background= '#FCE8E6';
+        endcardMegBox.style.display = "block";
+        endcardInputMessage.innerHTML = 'The length should be n integer & between  0 - 13 sec.';
+        endcardInputCheck = false;
+    } else {
+        endcardMegBox.style.display = "none";
+        endcardLengthField.style.background= '#E7EDF3';
+        endcardLengthField.style.border = "none";
+        endcardInputCheck = true;
+    }
+})
+
+// Video & Audio Transition Panel
+for (let q = 0; q < accordion.length; q++) {
+    accordion[q].addEventListener("click", function(e) {
+        for (let w = 0; w < accordion.length; w++) {
+            if (w == q) {
+                panel = this.nextElementSibling;
+                this.classList.toggle("selected");
+                panel.classList.toggle("close");
+            } else {
+                accordion[w].classList.remove("selected");
+                accordion[w].nextElementSibling.classList.add("close");
+            }
+        }
+
+    });
+}
+
+let publicStatus = false;
+let currentOpenMenu = null;
+let anyBoxOpen = false;
+
+let statusSwitchs = document.getElementsByClassName('status-switch');
+for (let statusSwitch of statusSwitchs) {
+    statusSwitch.addEventListener('click', (e)=> {
+        e.preventDefault();
+        let publicColumn = statusSwitch.previousElementSibling;
+        let publicColumnValue = publicColumn.getElementsByTagName('span');
+        let dotsBox = statusSwitch.getElementsByClassName('status-option-box');
+        let markPublic = statusSwitch.getElementsByClassName('public');
+        let markPrivate = statusSwitch.getElementsByClassName('private');
+        currentOpenMenu = e.target;
+        console.log('currentOpenMenu', currentOpenMenu);
+
+        if (publicStatus == false && anyBoxOpen !== true) {
+            dotsBox[0].style.display = "block";
+            publicStatus = true;
+            anyBoxOpen = true;
+            console.log('anyBoxOpen2: ', anyBoxOpen);
+            jQuery(markPublic).on('click', function() {
+                publicColumnValue[0].classList.add('icon-public');
+                publicColumnValue[0].classList.remove('icon-private');
+            });
+            jQuery(markPrivate).on('click', function() {
+                publicColumnValue[0].classList.remove('icon-public');
+                publicColumnValue[0].classList.add('icon-private');
+            });
+        } else {
+            dotsBox[0].style.display = "none";
+            publicStatus = false;
+            anyBoxOpen = false;
+            console.log('anyBoxOpen3: ', anyBoxOpen);
+        }
+    });
+}
+
+let videoTransitions =
+    document.getElementsByClassName('video-transition-option');
+for (let videoTransition of videoTransitions) {
+    videoTransition.addEventListener('click', (e) => {
+        e.preventDefault();
+        //NOTE: the 'textbox-0' id is not unique.
+        let updateTitle = videoTransition.getElementsByTagName('h3');
+        let updateTitleColor= $(updateTitle).css('color');
+        videoTransitionTitle.innerHTML = updateTitle[0].innerHTML;
+        videoTransitionTitle.style.color = updateTitleColor;
+        this.handleTransition(
+            videoTransition, videoTransitions, 'video-', 'textbox-0');
+    });
+}
+
+let audioTransitions =
+    document.getElementsByClassName('audio-transition-option');
+for (let audioTransition of audioTransitions) {
+    audioTransition.addEventListener('click', (e) => {
+        e.preventDefault();
+        let updateTitle = audioTransition.getElementsByTagName('h3');
+        let updateTitleColor= $(updateTitle).css('color');
+        audioTransitionTitle.innerHTML = updateTitle[0].innerHTML;
+        audioTransitionTitle.style.color = updateTitleColor;
+        this.handleTransition(
+            audioTransition, audioTransitions, 'audio-', 'textbox-1');
+    });
+}
+
+function handleTransition(transition, transitions, prefix, id) {
+    for (let transitionToClear of transitions) {
+        transitionToClear.classList.remove('active');
+    }
+    transition.classList.add('active');
+    let selects = document.getElementsByTagName('select');
+    let want = transition.id.replace(prefix, '').replace(/-/g, '');
+    for (let sel of selects) {
+        if (sel.id == id) {
+            for (let index = 0; index < sel.options.length; index++) {
+                let got = sel.options[index].value.toLowerCase().replace(/ /g, '');
+                if (got == want) {
+                    sel.selectedIndex = index;
+                    break;
+                }
+            }
+            break;
+        }
+    }
+}
+
+// for (let s = 0; s < audioTransitionOption.length; s++) {
+// 	audioTransitionOption[s].addEventListener('click', function (e) {
+// 		audioCurrentOption = audioTransitionOption[s];
+// 		audioTransitionTitle.innerHTML = audioTransitionTitleArray[s];
+// 		audioTransitionTitle.style.color = audioTransitionTitleColor[s];
+// 		for (let y = 0; y < audioTransitionOption.length; y++ ) {
+// 			if (audioTransitionOption[y].classList.contains('active')) {
+// 				audioTransitionOption[y].classList.remove('active');
+// 			}
+// 		}
+// 		this.classList.add('active');
+// 		audioCurrentOptionText = audioCurrentOption.getElementsByTagName('h3')[0].innerHTML;
+// 		// audioCurrentOptionText is the audio transition value for you pass it to the from validation
+// 	});
+// }
+
+// Global show error & warning message function
+function openMessageBox() {
+    messageContainer.style.display = "block";
+    messageBox.style.display = "block";
+}
+
+function closeMessageBox() {
+    messageContainer.style.display = "none";
+    messageBox.style.display = "none";
+}
+
+function showMessage(type, subject, detail, showYesNoBtn, yesCallBack, noCsllBack) {
+    type = type.charAt(0).toUpperCase() + type.slice(1);
+    messageType.innerHTML = type;
+    banner.classList.add(type);
+    iconType.classList.add(type);
+    messageSubject.innerHTML = subject;
+    messageDetail.innerHTML = detail;
+    if (showYesNoBtn) {
+        closeBtn.style.display = 'none';
+        noBtn.style.display = 'block';
+        yesBtn.style.display = 'block';
+    } else {
+        closeBtn.style.display = 'block';
+        noBtn.style.display = 'none';
+        yesBtn.style.display = 'none';
+    }
+    if (yesCallBack) {
+        yesBtn.addEventListener('click', function (e) {
+            e.preventDefault();
+            window[yesCallBack]();
+            closeMessageBox();
+        });
+    }
+    if (noCsllBack) {
+        noBtn.addEventListener('click', function (e) {
+            e.preventDefault();
+            window[noCsllBack]();
+            closeMessageBox();
+        });
+    }
+}
+
+
+function yesFunctionName() {
+    //you can rename this funcion
+}
+
+function noFunctionName() {
+    //you can rename this funcion
+}
+
+closeBtn.addEventListener("click", function(e) {
+    e.preventDefault();
+    messageSubject.innerHTML = '';
+    messageDetail.innerHTML = '';
+    closeMessageBox();
+});
+
+// Form validation
+runBtn.addEventListener('click', function(e){
+    e.preventDefault();
+    if ( idPathPassInputCheck == false || videoInputPassCheck == false || endcardInputCheck == false ) {
+        showMessage(
+            "Error",
+            "Here is an error message.",
+            "Url or ID should be longer than 11 characters. <br/> Video output length should be an integer & between  7 - 30 sec. <br/> End Card length should be an integer & between  0 - 13 sec.",
+
+        );
+        openMessageBox();
+    }
+});
+
+idPath.addEventListener("focus", function() {
+    this.classList.remove('id-focus');
+});
+
+
+const timeFormatTitle = document.getElementById('time-format-title');
+const recreateVideoTitle = document.getElementById('recreate-video-title');
+
+// Recreate Video & Time Format Toggle
+let timeFormats =
+    document.getElementsByClassName('time-format-option');
+for (let timeFormat of timeFormats) {
+    timeFormat.addEventListener('click', (e) => {
+        e.preventDefault();
+        timeFormatTitle.innerHTML = timeFormat.innerHTML;
+        this.handleOptionSelect(timeFormat, timeFormats);
+    });
+}
+
+let recreateVideos =
+    document.getElementsByClassName('recreate-option');
+for (let recreateVideo of recreateVideos) {
+    recreateVideo.addEventListener('click', (e) => {
+        e.preventDefault();
+        recreateVideoTitle.innerHTML = recreateVideo.innerHTML;
+        this.handleOptionSelect(recreateVideo, recreateVideos);
+    });
+}
+
+function handleOptionSelect(item, items) {
+    for (let item of items) {
+        item.classList.remove('active');
+    }
+    item.classList.add('active');
+}
+
+
+// function enableSecFormat() {
+// 	frameFormat.classList.remove('active');
+// 	secFormat.classList.add('active');
+// }
+// function enableFrameFormat() {
+// 	secFormat.classList.remove('active');
+// 	frameFormat.classList.add('active');
+// }
+// function enableHiVideo() {
+// 	hiVideo.classList.add('active');
+// 	lowVideo.classList.remove('active');
+// }
+// function enableLowVideo() {
+// 	hiVideo.classList.remove('active');
+// 	lowVideo.classList.add('active');
+// }
+// timeToggle.addEventListener('change', function (e) {
+// 	if (e.target.checked == true) {
+// 		enableFrameFormat();
+// 	} else {
+// 		enableSecFormat();
+// 	}
+// });
+// recreateToggle.addEventListener('change', function (e) {
+// 	if (e.target.checked == true) {
+// 		enableHiVideo();
+// 	} else {
+// 		enableLowVideo();
+// 	}
+// });
+// secFormat.addEventListener('click', function (e) {
+// 	timeToggle.checked = false;
+// 	enableSecFormat();
+// })
+// frameFormat.addEventListener('click', function (e) {
+// 	timeToggle.checked = true;
+// 	enableFrameFormat();
+// })
+
+// hiVideo.addEventListener('click', function (e) {
+// 	recreateToggle.checked = true;
+// 	enableHiVideo();
+// })
+// lowVideo.addEventListener('click', function (e) {
+// 	recreateToggle.checked = false;
+// 	enableLowVideo();
+// })
+
+// video & Audio Track Lock
+trackLock.addEventListener('click', function (e) {
+    if (link.classList.contains('un-link') || lock.classList.contains('un-lock')) {
+        link.classList.add('link');
+        link.classList.remove('un-link');
+        lock.classList.remove('un-lock');
+        lock.classList.add('lock');
+    } else {
+        link.classList.add('un-link');
+        link.classList.remove('link');
+        lock.classList.remove('lock');
+        lock.classList.add('un-lock');
+    }
+})
+
+// apply transition
+transitionsBox.addEventListener('change', function (e) {
+    if (e.target.checked == true) {
+        console.log('on');
+    } else {
+        console.log('off');
+    }
+});
+
+libraryBtn.addEventListener('click', function(e) {
+    e.preventDefault();
+    libraryBox.style.display = 'block';
+    messageContainer.style.display = "block";
+    header.style.zIndex = '0';
+});
+
+iconClose.addEventListener('click', function(e) {
+    e.preventDefault();
+    libraryBox.style.display = 'none';
+    messageContainer.style.display = "none";
+    header.style.zIndex = '9999';
+    if (currentOpenMenu != null) {
+        console.log('2', currentOpenMenu);
+        currentOpenMenu.click();
+    }
+
+});
+
+messageContainer.addEventListener('click', function(e) {
+    e.preventDefault();
+    iconClose.click();
+    settingCloseIcon.click();
+});
+
+settingBtn.addEventListener('click', function(e) {
+    e.preventDefault();
+    settingPanel.style.display = 'block';
+    messageContainer.style.display = "block";
+    header.style.zIndex = '0';
+});
+settingCloseIcon.addEventListener('click', function(e) {
+    e.preventDefault();
+    settingPanel.style.display = 'none';
+    messageContainer.style.display = "none";
+    header.style.zIndex = '9999';
+});
+
+const lighWhooshSoundEffect = document.getElementById('ligh-whoosh-sound-effect');
+const darkThudSoundEffect = document.getElementById('ldark-thud-sound-effect');
+const leadingRiserSoundEffect = document.getElementById('leading-riser-sound-effect');
+
+lighWhooshSoundEffect.addEventListener('mouseover', function(e) {
+    const lighWhooshSound = new Audio('sounds/Rake_Swing_Whoosh_Close.mp3');
+    lighWhooshSound.play();
+});
+
+darkThudSoundEffect.addEventListener('mouseover', function(e) {
+    const darkThudSoundEffect = new Audio('sounds/222517__qubodup__dramatic-hit.flac');
+    darkThudSoundEffect.play();
+});
+
+leadingRiserSoundEffect.addEventListener('mouseover', function(e) {
+    const leadingRiserSoundEffect = new Audio('sounds/464250__suburbanwizard__echo-chromatic-riser.wav');
+    leadingRiserSoundEffect.play();
+});
